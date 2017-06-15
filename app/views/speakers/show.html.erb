@@ -1,0 +1,29 @@
+<h2>List of Speakers</h2>
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Major</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Description</th>
+      <th>Avatar</th>
+    </tr>
+  </thead>
+ <tbody>
+ 	<% @speaker.each do |speaker| %>
+    <tr>
+		<td><%= speaker.sp_firstname %></td>
+		<td><%= speaker.sp_lastname %></td>
+		<td><%= speaker.sp_major %></td>
+		<td><%= speaker.sp_email %></td>
+		<td><%= speaker.sp_phone %></td>
+		<td><%= speaker.sp_description %></td>
+		<td><%= speaker.sp_avatar %></td>
+    <td><%= link_to 'Edit',edit_speaker_path(speaker), class: 'btn btn_default' %></td>
+    <td><%= link_to 'Delete',speaker, method: :Delete, class: 'btn btn_default' %></td>
+	</tr>
+	<% end %>
+ </tbody>
+</table>

@@ -1,0 +1,25 @@
+<%= form_for @speaker, html:{class: 'form-horizontal'} do |f| %>
+
+<%= f.label :sp_firstname, 'First name:', class: 'control-label' %>
+<%= f.text_field :sp_firstname, class: 'form-control' %>
+
+<%= f.label :sp_lastname, 'Last name:', class: 'control-label' %>
+<%= f.text_field :sp_lastname, class: 'form-control' %>
+
+<%= f.label :sp_major, 'Major:', class: 'control-label' %>
+<%= f.text_field :sp_major, class: 'form-control' %>
+
+<%= f.label :sp_email, 'Email:', class: 'control-label' %>
+<%= f.text_field :sp_email, class: 'form-control' %>
+
+<%= f.label :sp_phone, 'Phone:', class: 'control-label' %>
+<%= f.text_field :sp_phone, class: 'form-control' %>
+
+<%= f.label :sp_description, 'Description:', class: 'control-label' %>
+<%= f.text_field :sp_description, class: 'form-control' %>
+
+<%= f.label :sp_avatar, 'Avatar:', class: 'control-label' %>
+<%= f.text_field :sp_avatar, class: 'form-control' %>
+
+<%= f.submit 'Save', class: 'btn btn-primary' %>
+<% end %>
